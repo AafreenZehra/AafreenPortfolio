@@ -1,97 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aafreen Zehra | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
+    body {
+      background: #fff;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(to right, #5c0d0d, #9c1d1d);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      min-height: 100vh;
+    }
+
+    section:nth-child(even) {
+      background: #f7f7f7;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #5c0d0d;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: '\2022';
+      color: #9c1d1d;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .contact {
+      background: #eee;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .contact p {
+      font-size: 1rem;
+    }
+
+    .about-img {
+      width: 200px;
+      border-radius: 10px;
+      margin: 1rem auto;
+      display: block;
+    }
+
+    .skills-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .skills-list {
+      flex: 1;
+    }
+
+    .skills-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .skills-img img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .skills-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
 <body>
-  <header class="hero">
-    <h1 class="name">Aafreen Zehra</h1>
-    <p class="title">Software Developer | AI & Cybersecurity Enthusiast</p>
-    <div class="links">
-      <a href="https://github.com/AafreenZehra" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/aafreenzehra19/" target="_blank">LinkedIn</a>
-    </div>
+  <header>
+    <h1>Aafreen Zehra</h1>
+    <p>Software Developer | Creative Coder | AI Enthusiast</p>
+    <p>
+      <a href="https://github.com/AafreenZehra" target="_blank">GitHub</a>
+      |
+      <a href="https://linkedin.com/in/aafreenzehra19" target="_blank">LinkedIn</a>
+    </p>
   </header>
 
-  <section class="about">
+  <section id="about">
     <h2>About Me</h2>
-    <div class="about-container">
-      <div class="about-text">
-        <p>I’m a third-year BTech Computer Science student passionate about Artificial Intelligence, Software Development, and Cybersecurity. I work on projects that blend AI with secure systems and love solving real-world problems using code. I’m currently building an app to track academic performance and developing phishing detection software using BERT & Flask.</p>
-      </div>
-      <div class="profile-image">
-        <img src="images/profile1.jpg.png" alt="Aafreen Zehra">
-      </div>
+    <div class="container">
+      <img src="images/profile1.jpg" alt="Aafreen" class="about-img">
+      <p>I am a second-year BTech Computer Science student with deep interest in Software Development, Artificial Intelligence, and Cybersecurity. I enjoy solving real-world problems through code and love blending security with development in unique projects. I am currently exploring advanced AI techniques and backend systems, while building full-scale applications that are user-friendly and secure.</p>
     </div>
   </section>
 
-  <section class="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.Tech, Computer Science</strong> – BSA Crescent University (2023–2027), GPA: 7.00</li>
-      <li><strong>12th</strong> – Good Shepherd Convent, 80% (2022–2023)</li>
-    </ul>
-  </section>
-
-  <section class="skills">
+  <section id="skills">
     <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <div>
-        <h3>Languages</h3>
+    <div class="container skills-section">
+      <div class="skills-list">
         <ul>
-          <li>Python, C, JavaScript, SQL</li>
-        </ul>
-        <h3>Web</h3>
-        <ul>
-          <li>HTML, CSS, Bootstrap</li>
-        </ul>
-        <h3>Tools</h3>
-        <ul>
-          <li>Google Colab, MS Office, Power BI</li>
+          <li>Languages: Python, C, C++, JavaScript, SQL</li>
+          <li>Web Technologies: HTML, CSS, Bootstrap, Flask</li>
+          <li>Frameworks & Tools: Git, GitHub, VS Code, Jupyter, Google Colab</li>
+          <li>AI/ML: scikit-learn, TensorFlow (basic), BERT, NLP, Deep Learning</li>
+          <li>Core Concepts: DSA, OOP, OS, CN, MySQL, DBMS</li>
+          <li>Soft Skills: Communication, Teamwork, Problem Solving, Time Management</li>
         </ul>
       </div>
-      <div>
-        <h3>Frameworks & Dev</h3>
-        <ul>
-          <li>Git, GitHub, Flask, VS Code, Jupyter</li>
-        </ul>
-        <h3>AI/ML</h3>
-        <ul>
-          <li>Machine Learning, Deep Learning, NLP, BERT, scikit-learn, TensorFlow</li>
-        </ul>
-        <h3>CS Concepts</h3>
-        <ul>
-          <li>DSA, OOP, OS, Networks, SQL (MySQL)</li>
-        </ul>
+      <div class="skills-img">
+        <img src="images/profile2.jpg" alt="Aafreen Skills">
       </div>
-    </div>
-    <div class="side-photo">
-      <img src="images/profile2.jpg.jpg" alt="Aafreen Zehra">
     </div>
   </section>
 
-  <section class="projects">
+  <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Smart Academic Planner & Performance Tracker</strong><br>
-        Built using C++ with file handling and OOP concepts for academic management.
-        <br><a href="https://github.com/AafreenZehra/Academic-Planner" target="_blank">GitHub Link</a>
-      </li>
-    </ul>
+    <div class="container">
+      <p><strong>Smart Academic Planner & Performance Tracker</strong><br>
+      A C++ tool to help students manage subject-wise marks, grades, and goals. Built using object-oriented programming and file handling.<br>
+      🔗 <a href="https://github.com/AafreenZehra/Smart-Academic-Planner" target="_blank">View on GitHub</a></p>
+    </div>
   </section>
 
-  <section class="research">
-    <h2>Research Work</h2>
-    <p>Currently working on a Phishing Detection System using BERT, Flask, and NLP techniques, aiming for 99%+ accuracy combining AI with cybersecurity applications.</p>
+  <section id="research">
+    <h2>Research & Current Work</h2>
+    <div class="container">
+      <p>I am currently working on a real-world research project to build a phishing detection system with over <strong>99% accuracy</strong>. This project uses advanced techniques like <strong>BERT, Flask, and NLP</strong> to detect phishing content from emails and URLs. It combines my interest in AI and Cybersecurity, demonstrating how smart systems can protect users in the digital age.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="container">
+      <p><strong>B.Tech – Computer Science</strong><br>GPA: 7.00 (2023–2027)</p>
+      <p><strong>Good Shepherd Convent</strong><br>12th – 80% (2022–2023)</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="container">
+      <ul>
+        <li>Hacker Rank – Problem Solving (Advanced)</li>
+        <li>Python 3.4.3 – IIT Spoken Tutorial</li>
+        <li>Advanced C++ – IIT Spoken Tutorial</li>
+        <li>SQL Basics – HackerRank</li>
+        <li>Network Simulator – IIT Bombay</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: aafrenzehrastar@gmail.com | Location: Chennai</p>
   </section>
 
 </body>
-
 </html>
