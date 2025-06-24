@@ -1,92 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aafreen Zehra | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
-  <header>
-    <h1>Aafreen Zehra</h1>
-    <p>Software Developer | AI & Cybersecurity Enthusiast</p>
-    <img src="images/profile.jpg" alt="Aafreen Zehra" class="profile">
-    <p>
+<body>
+  <header class="hero">
+    <h1 class="name">Aafreen Zehra</h1>
+    <p class="title">Software Developer | AI & Cybersecurity Enthusiast</p>
+    <div class="links">
       <a href="https://github.com/AafreenZehra" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/aafreenzehra19" target="_blank">LinkedIn</a>
-    </p>
+      <a href="https://www.linkedin.com/in/aafreenzehra19/" target="_blank">LinkedIn</a>
+    </div>
   </header>
 
-  <div class="section">
+  <section class="about">
     <h2>About Me</h2>
-    <p>
-      I'm a third-year BTech Computer Science student passionate about Artificial Intelligence, Software Development, and Cybersecurity. 
-      I work on projects that blend AI with secure systems and love solving real-world problems using code. 
-      I'm currently building an app to track academic performance and developing phishing detection software using BERT & Flask.
-    </p>
-  </div>
+    <div class="about-container">
+      <div class="about-text">
+        <p>I’m a third-year BTech Computer Science student passionate about Artificial Intelligence, Software Development, and Cybersecurity. I work on projects that blend AI with secure systems and love solving real-world problems using code. I’m currently building an app to track academic performance and developing phishing detection software using BERT & Flask.</p>
+      </div>
+      <div class="profile-image">
+        <img src="images/profile1.jpg.png" alt="Aafreen Zehra">
+      </div>
+    </div>
+  </section>
 
-  <div class="section">
+  <section class="education">
     <h2>Education</h2>
     <ul>
       <li><strong>B.Tech, Computer Science</strong> – BSA Crescent University (2023–2027), GPA: 7.00</li>
-      <li><strong>12th – Good Shepherd Convent</strong>, 80% (2022–2023)</li>
+      <li><strong>12th</strong> – Good Shepherd Convent, 80% (2022–2023)</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="skills">
     <h2>Technical Skills</h2>
-    <ul>
-      <li>Programming: Python, C, JavaScript, SQL</li>
-      <li>Web: HTML, CSS, Bootstrap</li>
-      <li>Tools: Git, GitHub, VS Code, Jupyter, Power BI</li>
-      <li>AI/ML: BERT, scikit-learn, TensorFlow (basic), NLP</li>
-      <li>CS Concepts: DSA, OOP, OS, Networks, DBMS</li>
-    </ul>
-    <img src="images/skillside.png" alt="Skills Side Image" class="profile">
-  </div>
+    <div class="skills-grid">
+      <div>
+        <h3>Languages</h3>
+        <ul>
+          <li>Python, C, JavaScript, SQL</li>
+        </ul>
+        <h3>Web</h3>
+        <ul>
+          <li>HTML, CSS, Bootstrap</li>
+        </ul>
+        <h3>Tools</h3>
+        <ul>
+          <li>Google Colab, MS Office, Power BI</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Frameworks & Dev</h3>
+        <ul>
+          <li>Git, GitHub, Flask, VS Code, Jupyter</li>
+        </ul>
+        <h3>AI/ML</h3>
+        <ul>
+          <li>Machine Learning, Deep Learning, NLP, BERT, scikit-learn, TensorFlow</li>
+        </ul>
+        <h3>CS Concepts</h3>
+        <ul>
+          <li>DSA, OOP, OS, Networks, SQL (MySQL)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="side-photo">
+      <img src="images/profile2.jpg.jpg" alt="Aafreen Zehra">
+    </div>
+  </section>
 
-  <div class="section">
-    <h2>Research Work</h2>
-    <p>
-      Currently working on a Phishing Detection project using <strong>BERT</strong> and <strong>Flask</strong>, achieving up to <strong>99% accuracy</strong>. The project integrates deep learning, backend deployment, and cybersecurity use cases.
-    </p>
-  </div>
-
-  <div class="section">
+  <section class="projects">
     <h2>Projects</h2>
-    <p><strong>Smart Academic Planner & Performance Tracker</strong></p>
-    <p>
-      Developed in C++ using OOP and file handling, this app helps students track subject-wise performance, calculate grades, and generate reports.
-    </p>
-    <a href="https://github.com/AafreenZehra/Smart-Academic-Planner" target="_blank">🔗 GitHub Link</a>
-  </div>
-
-  <div class="section">
-    <h2>Certifications</h2>
     <ul>
-      <li>HackerRank – Problem Solving (Advanced)</li>
-      <li>Python 3.4.3 – IIT Spoken Tutorial</li>
-      <li>Advanced C++ Programming – IIT Spoken Tutorial</li>
-      <li>N-3 Network Simulator – IIT Bombay</li>
-      <li>SQL Basics – HackerRank</li>
+      <li>
+        <strong>Smart Academic Planner & Performance Tracker</strong><br>
+        Built using C++ with file handling and OOP concepts for academic management.
+        <br><a href="https://github.com/AafreenZehra/Academic-Planner" target="_blank">GitHub Link</a>
+      </li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Languages</h2>
-    <ul>
-      <li>English</li>
-      <li>Tamil</li>
-      <li>Hindi</li>
-    </ul>
-  </div>
-
-  <footer>
-    <p>© 2025 Aafreen Zehra | Portfolio</p>
-  </footer>
+  <section class="research">
+    <h2>Research Work</h2>
+    <p>Currently working on a Phishing Detection System using BERT, Flask, and NLP techniques, aiming for 99%+ accuracy combining AI with cybersecurity applications.</p>
+  </section>
 
 </body>
+
 </html>
